@@ -6,7 +6,6 @@ import com.relationship.util.Constant;
 import com.relationship.util.StringUtil;
 import com.relationship.util.XLUtil;
 import com.relationship.view.MainView;
-import com.relationship.view.RegisterView;
 import javafx.application.Application;
 import javafx.application.Platform;
 import javafx.scene.Group;

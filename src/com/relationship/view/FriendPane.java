@@ -1,9 +1,7 @@
 package com.relationship.view;
 
-import com.relationship.DAO.CommodityDAO;
 import com.relationship.DAO.FriendDAO;
 import com.relationship.DAO.SocialCircleDAO;
-import com.relationship.domain.Commodity;
 import com.relationship.domain.Friend;
 import com.relationship.domain.SocialCircle;
 import com.relationship.util.Constant;
