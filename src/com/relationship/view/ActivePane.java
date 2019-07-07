@@ -1,5 +1,6 @@
 package com.relationship.view;
 
+import com.browniebytes.javafx.control.DateTimePicker;
 import com.relationship.DAO.ActiveDAO;
 import com.relationship.DAO.SocialCircleDAO;
 import com.relationship.domain.Active;
@@ -7,6 +8,7 @@ import com.relationship.domain.SocialCircle;
 import com.relationship.util.Constant;
 import com.relationship.util.DateUtil;
 import com.relationship.util.XLUtil;
+import javafx.beans.property.ObjectProperty;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.scene.Group;
@@ -121,30 +123,36 @@ public class ActivePane extends Pane {
         TableColumn number = new TableColumn("编号");
         number.setCellValueFactory(new PropertyValueFactory<>("id"));
 
-        TableColumn name = new TableColumn("姓名");
-        name.setCellValueFactory(new PropertyValueFactory<>("name"));
+        TableColumn title = new TableColumn("标题");
+        title.setCellValueFactory(new PropertyValueFactory<>("title"));
 
-        TableColumn principal = new TableColumn("性别");
-        principal.setCellValueFactory(new PropertyValueFactory<>("sex"));
+        TableColumn detail = new TableColumn("详情");
+        detail.setCellValueFactory(new PropertyValueFactory<>("detail"));
 
-        TableColumn mobilePhone = new TableColumn("手机");
-        mobilePhone.setCellValueFactory(new PropertyValueFactory<>("mobilePhone"));
+        TableColumn startTime = new TableColumn("开始时间");
+        startTime.setCellValueFactory(new PropertyValueFactory<>("startTimeStr"));
 
-        TableColumn QQ = new TableColumn("QQ");
-        QQ.setCellValueFactory(new PropertyValueFactory<>("QQ"));
+        TableColumn endTime = new TableColumn("结束时间");
+        endTime.setCellValueFactory(new PropertyValueFactory<>("endTimeStr"));
 
-        TableColumn wx = new TableColumn("微信");
-        wx.setCellValueFactory(new PropertyValueFactory<>("wx"));
+        TableColumn initiator = new TableColumn("发起方");
+        initiator.setCellValueFactory(new PropertyValueFactory<>("initiator"));
 
-        TableColumn socialCircleName = new TableColumn("社交圈");
-        socialCircleName.setCellValueFactory(new PropertyValueFactory<>("socialCircleName"));
+        TableColumn address = new TableColumn("活动地址");
+        address.setCellValueFactory(new PropertyValueFactory<>("address"));
+
+        TableColumn summary = new TableColumn("活动总结");
+        summary.setCellValueFactory(new PropertyValueFactory<>("summary"));
+
+        TableColumn createTime = new TableColumn("创建时间");
+        createTime.setCellValueFactory(new PropertyValueFactory<>("createTimeStr"));
 
         data = FXCollections.observableArrayList();
 
         //查询活动
         data.addAll(ActiveDAO.findActiveList(null));
 
-        tableView.getColumns().addAll(number, name, principal, mobilePhone, QQ, wx, socialCircleName);
+        tableView.getColumns().addAll(number, title, detail, startTime, endTime, initiator, address, summary, createTime);
         tableView.setItems(data);
 
     }
@@ -215,7 +223,7 @@ public class ActivePane extends Pane {
         startTimeLabel.setPrefHeight(Constant.C_HEIGHT);
 
         //开始时间文本框
-        DatePicker startTimeTF = new DatePicker();
+        DateTimePicker startTimeTF = new DateTimePicker();
         startTimeTF.setLayoutX(Constant.LABEL_WIDTH + Constant.MARGER_LEFT + Constant.H_MARGER);
         startTimeTF.setLayoutY(Constant.V_MARGER * 4 + Constant.C_HEIGHT * 7);
         startTimeTF.setPrefHeight(Constant.C_HEIGHT);
@@ -228,7 +236,7 @@ public class ActivePane extends Pane {
         endTimeLabel.setPrefHeight(Constant.C_HEIGHT);
 
         //结束时间
-        DatePicker endTimeTF = new DatePicker();
+        DateTimePicker endTimeTF = new DateTimePicker();
         endTimeTF.setLayoutX(Constant.LABEL_WIDTH + Constant.MARGER_LEFT + Constant.H_MARGER);
         endTimeTF.setLayoutY(Constant.V_MARGER * 5 + Constant.C_HEIGHT * 8);
         endTimeTF.setPrefHeight(Constant.C_HEIGHT);
@@ -274,18 +282,18 @@ public class ActivePane extends Pane {
         summaryTF.prefWidthProperty().bind(stuStage.widthProperty().subtract(summaryTF.getLayoutX())
             .subtract(Constant.H_MARGER * 3));
 
-        //创建时间
-        Label createTimeLabel = new Label("创建时间:");
-        createTimeLabel.setLayoutX(Constant.MARGER_LEFT);
-        createTimeLabel.setLayoutY(Constant.V_MARGER * 9 + Constant.C_HEIGHT * 16);
-        createTimeLabel.setPrefWidth(Constant.LABEL_WIDTH);
-        createTimeLabel.setPrefHeight(Constant.C_HEIGHT);
-
-        //创建时间
-        DatePicker createTimeTF = new DatePicker();
-        createTimeTF.setLayoutX(Constant.LABEL_WIDTH + Constant.MARGER_LEFT + Constant.H_MARGER);
-        createTimeTF.setLayoutY(Constant.V_MARGER * 9 + Constant.C_HEIGHT * 16);
-        createTimeTF.setPrefHeight(Constant.C_HEIGHT);
+//        //创建时间
+//        Label createTimeLabel = new Label("创建时间:");
+//        createTimeLabel.setLayoutX(Constant.MARGER_LEFT);
+//        createTimeLabel.setLayoutY(Constant.V_MARGER * 9 + Constant.C_HEIGHT * 16);
+//        createTimeLabel.setPrefWidth(Constant.LABEL_WIDTH);
+//        createTimeLabel.setPrefHeight(Constant.C_HEIGHT);
+//
+//        //创建时间
+//        DateTimePicker createTimeTF = new DateTimePicker();
+//        createTimeTF.setLayoutX(Constant.LABEL_WIDTH + Constant.MARGER_LEFT + Constant.H_MARGER);
+//        createTimeTF.setLayoutY(Constant.V_MARGER * 9 + Constant.C_HEIGHT * 16);
+//        createTimeTF.setPrefHeight(Constant.C_HEIGHT);
 
         //保存按钮
         Button saveBtn = new Button("保存");
@@ -298,10 +306,10 @@ public class ActivePane extends Pane {
             String activeName = nameTF.getText();
             String title = titleTF.getText();
             String detail = detailTF.getText();
-//            LocalDate startTime = startTimeTF.getValue();
-//            DateUtil.getDateTimeAsString(startTime,"yyyy-MM-dd HH:mm:ss");
-//            LocalDate endTime = endTimeTF.getValue();
-//            DateUtil.getDateTimeAsString(endTime,"yyyy-MM-dd HH:mm:ss");
+            ObjectProperty<LocalDateTime> property1 = startTimeTF.dateTimeProperty();
+            LocalDateTime startTime = property1.getValue();
+            ObjectProperty<LocalDateTime> property2 = endTimeTF.dateTimeProperty();
+            LocalDateTime endTime = property2.getValue();
             String initiator = initiatorTF.getText();
             String address = addressTF.getText();
             String summary = summaryTF.getText();
@@ -310,11 +318,10 @@ public class ActivePane extends Pane {
 
             Active active = new Active();
             active.setId(id);
-            active.setName(activeName);
             active.setTitle(title);
             active.setDetail(detail);
-//            active.setStartTime();
-//            active.setEndTime();
+            active.setStartTime(startTime);
+            active.setEndTime(endTime);
             active.setInitiator(initiator);
             active.setAddress(address);
             active.setSummary(summary);
@@ -343,7 +350,7 @@ public class ActivePane extends Pane {
 
         group.getChildren().addAll(nameLabel, nameTF, titleLabel, titleTF,
                 detailLabel, detailTF, startTimeLabel, startTimeTF, endTimeLabel, endTimeTF, initiatorLabel, initiatorTF,
-                addressLabel, addressTF, summaryLabel, summaryTF, createTimeLabel, createTimeTF, saveBtn);
+                addressLabel, addressTF, summaryLabel, summaryTF, saveBtn);
 
         stuStage.setScene(new Scene(group, Constant.SCENE_WIDTH, Constant.SCENE_HEIGHT * 3));
         stuStage.show();

@@ -25,7 +25,7 @@ public class ActiveDAO {
      */
     public static List<Active> findActiveList(Long Id)
     {
-        String sql = "`title`, `detail`, `startTime`, `endTime`, `initiator`, `address`, `summary`, `createTime`";
+        String sql = "select `id`, `title`, `detail`, `startTime`, `endTime`, `initiator`, `address`, `summary`, `createTime` from active ";
 
         if (Id != null)
         {
@@ -41,18 +41,17 @@ public class ActiveDAO {
             {
                 Active active = new Active();
                 active.setId(resultSet.getLong(1));
-                active.setName(resultSet.getString(2));
-                active.setTitle(resultSet.getString(3));
-                active.setDetail(resultSet.getString(4));
+                active.setTitle(resultSet.getString(2));
+                active.setDetail(resultSet.getString(3));
 //                active.setStartTime(resultSet.getString(5));
 //                active.setEndTime(resultSet.getString(6));
                 DateTimeFormatter df = DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss");
-                active.setStartTime(LocalDateTime.parse(resultSet.getString(5),df));
-                active.setEndTime(LocalDateTime.parse(resultSet.getString(6),df));
-                active.setInitiator(resultSet.getString(7));
-                active.setAddress(resultSet.getString(8));
-                active.setSummary(resultSet.getString(9));
-                active.setCreateTime(LocalDateTime.parse(resultSet.getString(10),df));
+                active.setStartTime(LocalDateTime.parse(resultSet.getString(4).substring(0,19),df));
+                active.setEndTime(LocalDateTime.parse(resultSet.getString(5).substring(0,19),df));
+                active.setInitiator(resultSet.getString(6));
+                active.setAddress(resultSet.getString(7));
+                active.setSummary(resultSet.getString(8));
+                active.setCreateTime(LocalDateTime.parse(resultSet.getString(9).substring(0,19),df));
 
                 activeList.add(active);
             }

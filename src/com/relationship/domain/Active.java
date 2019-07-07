@@ -1,6 +1,9 @@
 package com.relationship.domain;
 
+import com.relationship.util.DateUtil;
+
 import java.time.LocalDateTime;
+import java.time.format.DateTimeFormatter;
 
 /**
  * 作者: 修罗大人<br>
@@ -11,11 +14,6 @@ import java.time.LocalDateTime;
 public class Active {
 
     private Long id;
-
-    /**
-     * 活动名称
-     */
-    private String name;
 
     /**
      * 标题
@@ -57,6 +55,20 @@ public class Active {
      */
     private LocalDateTime createTime;
 
+    public String getStartTimeStr()
+    {
+        return DateUtil.getDateTimeAsString(this.startTime,"yyyy-MM-dd HH:mm:ss");
+    }
+
+    public String getEndTimeStr()
+    {
+        return DateUtil.getDateTimeAsString(this.endTime,"yyyy-MM-dd HH:mm:ss");
+    }
+
+    public String getCreateTimeStr()
+    {
+        return DateUtil.getDateTimeAsString(this.createTime,"yyyy-MM-dd HH:mm:ss");
+    }
 
     public Long getId() {
         return id;
@@ -64,14 +76,6 @@ public class Active {
 
     public void setId(Long id) {
         this.id = id;
-    }
-
-    public String getName() {
-        return name;
-    }
-
-    public void setName(String name) {
-        this.name = name;
     }
 
     public String getTitle() {
