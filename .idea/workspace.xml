@@ -2,9 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ae7de64b-911c-47c6-9bb4-e8e34fd62fcd" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/com/relationship/DAO/SocialCircleDAO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/relationship/domain/SocialCircle.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/relationship/view/SocialCirclePane.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/relationship/DAO/FriendDAO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/relationship/domain/Friend.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/relationship/view/FriendPane.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -28,60 +28,71 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/com/relationship/DAO/SocialCircleDAO.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="233">
-              <caret line="108" column="62" lean-forward="true" selection-start-line="108" selection-start-column="62" selection-end-line="108" selection-end-column="62" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/relationship/view/SocialCirclePane.java">
+        <entry file="file://$PROJECT_DIR$/src/com/relationship/domain/Friend.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="246">
-              <caret line="133" lean-forward="true" selection-start-line="133" selection-end-line="133" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/relationship/domain/SocialCircle.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="243">
-              <caret line="27" column="21" selection-start-line="27" selection-start-column="19" selection-end-line="27" selection-end-column="21" />
+            <state relative-caret-position="557">
+              <caret line="42" column="25" lean-forward="true" selection-start-line="42" selection-start-column="25" selection-end-line="42" selection-end-column="25" />
               <folding>
-                <element signature="e#444#445#0" expanded="true" />
-                <element signature="e#467#468#0" expanded="true" />
-                <element signature="e#437#438#0" expanded="true" />
-                <element signature="e#462#463#0" expanded="true" />
-                <element signature="e#496#497#0" expanded="true" />
-                <element signature="e#524#525#0" expanded="true" />
-                <element signature="e#555#556#0" expanded="true" />
-                <element signature="e#582#583#0" expanded="true" />
-                <element signature="e#622#623#0" expanded="true" />
-                <element signature="e#654#655#0" expanded="true" />
-                <element signature="e#745#746#0" expanded="true" />
-                <element signature="e#774#775#0" expanded="true" />
-                <element signature="e#818#819#0" expanded="true" />
-                <element signature="e#854#855#0" expanded="true" />
-                <element signature="e#690#691#0" expanded="true" />
-                <element signature="e#722#723#0" expanded="true" />
-                <element signature="e#772#773#0" expanded="true" />
-                <element signature="e#814#815#0" expanded="true" />
-                <element signature="e#852#853#0" expanded="true" />
-                <element signature="e#886#887#0" expanded="true" />
-                <element signature="e#940#941#0" expanded="true" />
-                <element signature="e#986#987#0" expanded="true" />
-                <element signature="e#1015#1016#0" expanded="true" />
-                <element signature="e#1040#1041#0" expanded="true" />
-                <element signature="e#1076#1077#0" expanded="true" />
-                <element signature="e#1104#1105#0" expanded="true" />
-                <element signature="e#1133#1134#0" expanded="true" />
-                <element signature="e#1158#1159#0" expanded="true" />
-                <element signature="e#1194#1195#0" expanded="true" />
-                <element signature="e#1222#1223#0" expanded="true" />
+                <element signature="e#480#481#0" expanded="true" />
+                <element signature="e#505#506#0" expanded="true" />
+                <element signature="e#539#540#0" expanded="true" />
+                <element signature="e#567#568#0" expanded="true" />
+                <element signature="e#598#599#0" expanded="true" />
+                <element signature="e#625#626#0" expanded="true" />
+                <element signature="e#665#666#0" expanded="true" />
+                <element signature="e#697#698#0" expanded="true" />
+                <element signature="e#727#728#0" expanded="true" />
+                <element signature="e#753#754#0" expanded="true" />
+                <element signature="e#791#792#0" expanded="true" />
+                <element signature="e#821#822#0" expanded="true" />
+                <element signature="e#859#860#0" expanded="true" />
+                <element signature="e#893#894#0" expanded="true" />
+                <element signature="e#947#948#0" expanded="true" />
+                <element signature="e#993#994#0" expanded="true" />
+                <element signature="e#1022#1023#0" expanded="true" />
+                <element signature="e#1047#1048#0" expanded="true" />
+                <element signature="e#1083#1084#0" expanded="true" />
+                <element signature="e#1111#1112#0" expanded="true" />
+                <element signature="e#1140#1141#0" expanded="true" />
+                <element signature="e#1165#1166#0" expanded="true" />
+                <element signature="e#1201#1202#0" expanded="true" />
+                <element signature="e#1229#1230#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/com/relationship/DAO/FriendDAO.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="135">
+              <caret line="62" column="28" selection-start-line="62" selection-start-column="28" selection-end-line="62" selection-end-column="28" />
+              <folding>
+                <element signature="docComment;class#FriendDAO#0" />
+                <element signature="method#findFriendList#0;class#FriendDAO#0" />
+                <element signature="e#3513#3557#0" />
+                <element signature="docComment;method#updateFriend#0;class#FriendDAO#0" />
+                <element signature="docComment;method#deletedFriend#0;class#FriendDAO#0" />
+                <element signature="method#deletedFriend#0;class#FriendDAO#0" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/relationship/view/FriendPane.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="89">
+              <caret line="169" column="49" lean-forward="true" selection-start-line="169" selection-start-column="49" selection-end-line="169" selection-end-column="49" />
+              <folding>
+                <element signature="docComment;class#FriendPane#0" />
+                <element signature="method#FriendPane#0;class#FriendPane#0" />
+                <element signature="e#1440#1793#0" />
+                <element signature="e#1640#1729#1" />
+                <element signature="e#2076#2165#1" />
+                <element signature="e#4385#4438#1" />
+                <element signature="e#9764#9826#1" />
               </folding>
             </state>
           </provider>
@@ -98,6 +109,10 @@
       <find>[menu]</find>
       <find>货物</find>
       <find>Commodity</find>
+      <find>用户</find>
+      <find>user</find>
+      <find>社交圈</find>
+      <find>socialCircle</find>
     </findStrings>
     <replaceStrings>
       <replace>人际关系管理</replace>
@@ -105,6 +120,8 @@
       <replace>menu</replace>
       <replace>社交圈</replace>
       <replace>SocialCircle</replace>
+      <replace>联系人</replace>
+      <replace>friend</replace>
     </replaceStrings>
   </component>
   <component name="Git.Settings">
@@ -122,6 +139,9 @@
         <option value="$PROJECT_DIR$/src/com/relationship/domain/SocialCircle.java" />
         <option value="$PROJECT_DIR$/src/com/relationship/view/SocialCirclePane.java" />
         <option value="$PROJECT_DIR$/src/com/relationship/DAO/SocialCircleDAO.java" />
+        <option value="$PROJECT_DIR$/src/com/relationship/domain/Friend.java" />
+        <option value="$PROJECT_DIR$/src/com/relationship/view/FriendPane.java" />
+        <option value="$PROJECT_DIR$/src/com/relationship/DAO/FriendDAO.java" />
       </list>
     </option>
   </component>
@@ -186,13 +206,6 @@
               <item name="07062310-relationship" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="relationship" type="462c0819:PsiDirectoryNode" />
-              <item name="util" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="07062310-relationship" type="b2602c69:ProjectViewProjectNode" />
-              <item name="07062310-relationship" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="relationship" type="462c0819:PsiDirectoryNode" />
               <item name="view" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
@@ -217,8 +230,8 @@
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="com.relationship.view" />
-      <recent name="com.relationship.domain" />
       <recent name="com.relationship.DAO" />
+      <recent name="com.relationship.domain" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -279,11 +292,18 @@
       <option name="project" value="LOCAL" />
       <updated>1562466706367</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="社交圈">
+      <created>1562485281740</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1562485281740</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="7268000" />
+    <option name="totallyTimeSpent" value="10937000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -358,7 +378,8 @@
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
     <MESSAGE value="初始化工程-不可运行" />
-    <option name="LAST_COMMIT_MESSAGE" value="初始化工程-不可运行" />
+    <MESSAGE value="社交圈" />
+    <option name="LAST_COMMIT_MESSAGE" value="社交圈" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -368,6 +389,12 @@
           <line>48</line>
           <properties />
           <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/relationship/DAO/FriendDAO.java</url>
+          <line>62</line>
+          <properties />
+          <option name="timeStamp" value="7" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
@@ -407,13 +434,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="98">
           <caret line="32" column="118" selection-start-line="32" selection-start-column="118" selection-end-line="32" selection-end-column="118" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/relationship/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="243">
-          <caret line="21" column="24" selection-start-line="21" selection-start-column="24" selection-end-line="21" selection-end-column="24" />
         </state>
       </provider>
     </entry>
@@ -463,10 +483,101 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/relationship/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="243">
+          <caret line="21" column="24" selection-start-line="21" selection-start-column="24" selection-end-line="21" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/relationship/domain/User.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="243">
+          <caret line="9" column="43" lean-forward="true" selection-start-line="9" selection-start-column="43" selection-end-line="9" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/relationship/DAO/SocialCircleDAO.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="233">
-          <caret line="108" column="62" lean-forward="true" selection-start-line="108" selection-start-column="62" selection-end-line="108" selection-end-column="62" />
+        <state relative-caret-position="287">
+          <caret line="90" selection-start-line="90" selection-end-line="102" selection-end-column="5" />
+          <folding>
+            <element signature="docComment;class#SocialCircleDAO#0" />
+            <element signature="method#findSocialCircleList#0;class#SocialCircleDAO#0" />
+            <element signature="e#749#798#1" />
+            <element signature="e#885#1515#0" />
+            <element signature="e#936#1505#1" />
+            <element signature="e#1536#1580#0" />
+            <element signature="method#updateSocialCircle#0;class#SocialCircleDAO#0" />
+            <element signature="e#1759#1796#1" />
+            <element signature="e#1986#2023#1" />
+            <element signature="method#createSocialCircle#0;class#SocialCircleDAO#0" />
+            <element signature="method#deleteSocialCircle#0;class#SocialCircleDAO#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/relationship/domain/Friend.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="557">
+          <caret line="42" column="25" lean-forward="true" selection-start-line="42" selection-start-column="25" selection-end-line="42" selection-end-column="25" />
+          <folding>
+            <element signature="e#480#481#0" expanded="true" />
+            <element signature="e#505#506#0" expanded="true" />
+            <element signature="e#539#540#0" expanded="true" />
+            <element signature="e#567#568#0" expanded="true" />
+            <element signature="e#598#599#0" expanded="true" />
+            <element signature="e#625#626#0" expanded="true" />
+            <element signature="e#665#666#0" expanded="true" />
+            <element signature="e#697#698#0" expanded="true" />
+            <element signature="e#727#728#0" expanded="true" />
+            <element signature="e#753#754#0" expanded="true" />
+            <element signature="e#791#792#0" expanded="true" />
+            <element signature="e#821#822#0" expanded="true" />
+            <element signature="e#859#860#0" expanded="true" />
+            <element signature="e#893#894#0" expanded="true" />
+            <element signature="e#947#948#0" expanded="true" />
+            <element signature="e#993#994#0" expanded="true" />
+            <element signature="e#1022#1023#0" expanded="true" />
+            <element signature="e#1047#1048#0" expanded="true" />
+            <element signature="e#1083#1084#0" expanded="true" />
+            <element signature="e#1111#1112#0" expanded="true" />
+            <element signature="e#1140#1141#0" expanded="true" />
+            <element signature="e#1165#1166#0" expanded="true" />
+            <element signature="e#1201#1202#0" expanded="true" />
+            <element signature="e#1229#1230#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/relationship/view/FriendPane.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="89">
+          <caret line="169" column="49" lean-forward="true" selection-start-line="169" selection-start-column="49" selection-end-line="169" selection-end-column="49" />
+          <folding>
+            <element signature="docComment;class#FriendPane#0" />
+            <element signature="method#FriendPane#0;class#FriendPane#0" />
+            <element signature="e#1440#1793#0" />
+            <element signature="e#1640#1729#1" />
+            <element signature="e#2076#2165#1" />
+            <element signature="e#4385#4438#1" />
+            <element signature="e#9764#9826#1" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/relationship/DAO/FriendDAO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="62" column="28" selection-start-line="62" selection-start-column="28" selection-end-line="62" selection-end-column="28" />
+          <folding>
+            <element signature="docComment;class#FriendDAO#0" />
+            <element signature="method#findFriendList#0;class#FriendDAO#0" />
+            <element signature="e#3513#3557#0" />
+            <element signature="docComment;method#updateFriend#0;class#FriendDAO#0" />
+            <element signature="docComment;method#deletedFriend#0;class#FriendDAO#0" />
+            <element signature="method#deletedFriend#0;class#FriendDAO#0" />
+          </folding>
         </state>
       </provider>
     </entry>
