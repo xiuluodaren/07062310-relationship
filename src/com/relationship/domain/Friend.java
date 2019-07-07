@@ -36,15 +36,43 @@ public class Friend implements Serializable {
      */
     private String wx;
 
+    /**
+     * 社交圈id
+     */
+    private Long socialCircleId;
+
+    /**
+     * 社交圈名称
+     */
+    private String socialCircleName;
+
     public Friend() {}
 
-    public Friend(Long id, String name, String sex, String mobilePhone, String QQ, String wx) {
+    public Friend(Long id, String name, String sex, String mobilePhone, String QQ, String wx, Long socialCircleId, String socialCircleName) {
         this.id = id;
         this.name = name;
         this.sex = sex;
         this.mobilePhone = mobilePhone;
         this.QQ = QQ;
         this.wx = wx;
+        this.socialCircleId = socialCircleId;
+        this.socialCircleName = socialCircleName;
+    }
+
+    public String getSocialCircleName() {
+        return socialCircleName;
+    }
+
+    public void setSocialCircleName(String socialCircleName) {
+        this.socialCircleName = socialCircleName;
+    }
+
+    public Long getSocialCircleId() {
+        return socialCircleId;
+    }
+
+    public void setSocialCircleId(Long socialCircleId) {
+        this.socialCircleId = socialCircleId;
     }
 
     public Long getId() {

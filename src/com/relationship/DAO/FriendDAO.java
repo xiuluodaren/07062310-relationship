@@ -23,7 +23,7 @@ public class FriendDAO {
      */
     public static List<Friend> findFriendList(Long Id)
     {
-        String sql = "SELECT `id`, `name`, `sex`, `mobilePhone`, `QQ`, `wx` FROM friend";
+        String sql = "SELECT `id`, `name`, `sex`, `mobilePhone`, `QQ`, `wx` , socialCircleId, socialCircleName FROM friend";
 
         if (Id != null)
         {
@@ -44,6 +44,8 @@ public class FriendDAO {
                 friend.setMobilePhone(resultSet.getString(4));
                 friend.setQQ(resultSet.getString(5));
                 friend.setWx(resultSet.getString(6));
+                friend.setSocialCircleId(resultSet.getLong(7));
+                friend.setSocialCircleName(resultSet.getString(8));
 
                 friendList.add(friend);
             }
@@ -79,10 +81,10 @@ public class FriendDAO {
         XLUtil.fillObjectWithNull(oldFind,friend);
 
         String sql = "UPDATE `friend` " +
-                "SET `name`=?,`sex`=?,`mobilePhone`=?,`QQ`=?,`wx`=? WHERE `id`=?;";
+                "SET `name`=?,`sex`=?,`mobilePhone`=?,`QQ`=?,`wx`=?, socialCircleId=?, socialCircleName=? WHERE `id`=?;";
 
         boolean execute = JDBCConnection.execute(sql, friend.getName(), friend.getSex(), friend.getMobilePhone(),
-                friend.getQQ(),friend.getWx(), String.valueOf(friend.getId()));
+                friend.getQQ(),friend.getWx(), String.valueOf(friend.getSocialCircleId()), friend.getSocialCircleName(), String.valueOf(friend.getId()));
 
         return execute;
     }
@@ -104,11 +106,12 @@ public class FriendDAO {
     public static boolean createFriend(Friend friend)
     {
         //构造更新sql
-        String sql = "INSERT INTO `friend`( `name`, `sex`, `mobilePhone`, `QQ`, `wx`)" +
-                "VALUES (?,?,?,?,?);";
+        String sql = "INSERT INTO `friend`( `name`, `sex`, `mobilePhone`, `QQ`, `wx`, socialCircleId, socialCircleName)" +
+                "VALUES (?,?,?,?,?,?,?);";
 
         //执行插入
-        boolean execute = JDBCConnection.execute(sql, friend.getName(), friend.getSex(), friend.getMobilePhone(), friend.getQQ(), friend.getWx());
+        boolean execute = JDBCConnection.execute(sql, friend.getName(), friend.getSex(), friend.getMobilePhone(),
+                friend.getQQ(), friend.getWx(), String.valueOf(friend.getSocialCircleId()), friend.getSocialCircleName());
 
         return execute;
     }

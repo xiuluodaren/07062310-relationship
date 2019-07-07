@@ -32,6 +32,11 @@ public class SocialCircle {
      */
     private String wx;
 
+    @Override
+    public String toString() {
+        return name;
+    }
+
     public SocialCircle()
     {
         super();

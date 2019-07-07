@@ -95,7 +95,7 @@ public class SocialCirclePane extends Pane {
                 if (execute == true)
                 {
                     data.clear();
-                    data.addAll(SocialCircleDAO.findSocialCircleList(null,null));
+                    data.addAll(SocialCircleDAO.findSocialCircleList(null));
                     tableView.refresh();
                     XLUtil.showAlert("提示","删除成功");
                 }else{
@@ -138,7 +138,7 @@ public class SocialCirclePane extends Pane {
         data = FXCollections.observableArrayList();
 
         //查询社交圈
-        data.addAll(SocialCircleDAO.findSocialCircleList(null,null));
+        data.addAll(SocialCircleDAO.findSocialCircleList(null));
 
         tableView.getColumns().addAll(number, name, principal, mobilePhone, QQ, wx);
         tableView.setItems(data);
@@ -278,7 +278,7 @@ public class SocialCirclePane extends Pane {
             {
                 //查询社交圈
                 data.clear();
-                data.addAll(SocialCircleDAO.findSocialCircleList(null,null));
+                data.addAll(SocialCircleDAO.findSocialCircleList(null));
                 tableView.refresh();
                 XLUtil.showAlert("提示","保存成功");
             }else{

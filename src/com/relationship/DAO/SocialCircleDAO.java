@@ -18,7 +18,7 @@ import java.util.List;
 public class SocialCircleDAO {
 
     //查询列表
-    public static List<SocialCircle> findSocialCircleList(Long id,Long customerId)
+    public static List<SocialCircle> findSocialCircleList(Long id)
     {
         List<SocialCircle> SocialCircleList = new ArrayList<>();
 
@@ -65,7 +65,7 @@ public class SocialCircleDAO {
         }
 
         //先查询
-        List<SocialCircle> SocialCircleList = findSocialCircleList(socialCircle.getId(),null);
+        List<SocialCircle> SocialCircleList = findSocialCircleList(socialCircle.getId());
 
         if (SocialCircleList == null || SocialCircleList.size() <= 0)
         {

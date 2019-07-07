@@ -1,7 +1,11 @@
 package com.relationship.view;
 
+import com.relationship.DAO.CommodityDAO;
 import com.relationship.DAO.FriendDAO;
+import com.relationship.DAO.SocialCircleDAO;
+import com.relationship.domain.Commodity;
 import com.relationship.domain.Friend;
+import com.relationship.domain.SocialCircle;
 import com.relationship.util.Constant;
 import com.relationship.util.XLUtil;
 import javafx.collections.FXCollections;
@@ -130,12 +134,15 @@ public class FriendPane extends Pane {
         TableColumn wx = new TableColumn("微信");
         wx.setCellValueFactory(new PropertyValueFactory<>("wx"));
 
+        TableColumn socialCircleName = new TableColumn("社交圈");
+        socialCircleName.setCellValueFactory(new PropertyValueFactory<>("socialCircleName"));
+
         data = FXCollections.observableArrayList();
 
         //查询联系人
         data.addAll(FriendDAO.findFriendList(null));
 
-        tableView.getColumns().addAll(number, name, principal, mobilePhone, QQ, wx);
+        tableView.getColumns().addAll(number, name, principal, mobilePhone, QQ, wx, socialCircleName);
         tableView.setItems(data);
 
     }
@@ -222,6 +229,25 @@ public class FriendPane extends Pane {
         wxTF.setLayoutY(Constant.V_MARGER * 5 + Constant.C_HEIGHT * 4);
         wxTF.setPrefHeight(Constant.C_HEIGHT);
 
+        //社交圈
+        Label socialCircleLabel = new Label("社交圈:");
+        socialCircleLabel.setLayoutX(Constant.MARGER_LEFT);
+        socialCircleLabel.setLayoutY(Constant.V_MARGER * 6 + Constant.C_HEIGHT * 5);
+        socialCircleLabel.setPrefWidth(Constant.LABEL_WIDTH);
+        socialCircleLabel.setPrefHeight(Constant.C_HEIGHT);
+
+        //社交圈
+        ComboBox socialCircleBox = new ComboBox();
+        socialCircleBox.setLayoutX(Constant.LABEL_WIDTH + Constant.MARGER_LEFT + Constant.H_MARGER);
+        socialCircleBox.setLayoutY(Constant.V_MARGER * 6 + Constant.C_HEIGHT * 5);
+        socialCircleBox.setPrefHeight(Constant.C_HEIGHT);
+        socialCircleBox.prefWidthProperty().bind(wxTF.widthProperty());
+        socialCircleBox.setOnAction(event -> {
+            SocialCircle socialCircle = (SocialCircle) socialCircleBox.getValue();
+        });
+
+        //查询全部社交圈
+        socialCircleBox.getItems().addAll(SocialCircleDAO.findSocialCircleList(null));
 
         //保存按钮
         Button saveBtn = new Button("保存");
@@ -236,6 +262,7 @@ public class FriendPane extends Pane {
             String mobilePhone = mobilePhoneTF.getText();
             String QQ = QQTF.getText();
             String wx = wxTF.getText();
+            SocialCircle socialCircle = (SocialCircle) socialCircleBox.getValue();
             boolean execute = false;
 
             Friend friend = new Friend();
@@ -245,6 +272,8 @@ public class FriendPane extends Pane {
             friend.setMobilePhone(mobilePhone);
             friend.setWx(wx);
             friend.setQQ(QQ);
+            friend.setSocialCircleId(socialCircle.getId());
+            friend.setSocialCircleName(socialCircle.getName());
 
             if (id == null)
             {
@@ -268,7 +297,7 @@ public class FriendPane extends Pane {
         }));
 
         group.getChildren().addAll(nameLabel, nameTF, sexLabel, sexTF,
-                mobilePhoneLabel, mobilePhoneTF, QQLabel, QQTF, wxLabel, wxTF, saveBtn);
+                mobilePhoneLabel, mobilePhoneTF, QQLabel, QQTF, wxLabel, wxTF, socialCircleLabel, socialCircleBox, saveBtn);
 
         stuStage.setScene(new Scene(group, Constant.SCENE_WIDTH, Constant.SCENE_HEIGHT * 2));
         stuStage.show();
