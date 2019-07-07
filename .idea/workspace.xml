@@ -2,38 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ae7de64b-911c-47c6-9bb4-e8e34fd62fcd" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/relationship/DAO/SocialCircleDAO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/relationship/domain/SocialCircle.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/relationship/view/SocialCirclePane.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/07062310-relationship/app.config" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/07062310-relationship/app.config" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app.config" beforeDir="false" afterPath="$PROJECT_DIR$/src/app.config" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/wms/DAO/CommodityDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/relationship/DAO/CommodityDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/wms/DAO/PickDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/relationship/DAO/PickDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/wms/DAO/StorageLogDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/relationship/DAO/StorageLogDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/wms/DAO/UserDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/relationship/DAO/UserDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/wms/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/relationship/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/wms/domain/Commodity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/relationship/domain/Commodity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/wms/domain/Customer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/relationship/domain/Customer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/wms/domain/Menu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/relationship/domain/Menu.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/wms/domain/Pick.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/relationship/domain/Pick.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/wms/domain/StorageLog.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/relationship/domain/StorageLog.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/wms/domain/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/relationship/domain/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/wms/util/Constant.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/relationship/util/Constant.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/wms/util/DateUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/relationship/util/DateUtil.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/wms/util/JDBCConnection.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/relationship/util/JDBCConnection.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/wms/util/LoadPropertiesFile.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/relationship/util/LoadPropertiesFile.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/wms/util/LocalData.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/relationship/util/LocalData.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/wms/util/ObjectUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/relationship/util/ObjectUtils.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/wms/util/StringUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/relationship/util/StringUtil.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/wms/util/XLUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/relationship/util/XLUtil.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/wms/view/BaseView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/relationship/view/BaseView.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/wms/view/CommodityPane.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/relationship/view/CommodityPane.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/wms/view/MainView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/relationship/view/MainView.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/wms/view/PickManagerPane.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/relationship/view/PickManagerPane.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/wms/view/PickPane.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/relationship/view/PickPane.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/wms/view/RegisterView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/relationship/view/RegisterView.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/wms/view/StorageLogPane.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/relationship/view/StorageLogPane.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/wms/view/StorageOutPane.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/relationship/view/StorageOutPane.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/wms/view/UserPane.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/relationship/view/UserPane.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -47,47 +19,70 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/relationship/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2457">
-              <caret line="103" column="77" selection-start-line="103" selection-start-column="77" selection-end-line="103" selection-end-column="77" />
+            <state relative-caret-position="243">
+              <caret line="21" column="24" selection-start-line="21" selection-start-column="24" selection-end-line="21" selection-end-column="24" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/com/relationship/DAO/SocialCircleDAO.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="233">
+              <caret line="108" column="62" lean-forward="true" selection-start-line="108" selection-start-column="62" selection-end-line="108" selection-end-column="62" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/app.config">
+        <entry file="file://$PROJECT_DIR$/src/com/relationship/view/SocialCirclePane.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="189">
-              <caret line="7" column="12" selection-start-line="7" selection-start-column="12" selection-end-line="7" selection-end-column="12" />
+            <state relative-caret-position="246">
+              <caret line="133" lean-forward="true" selection-start-line="133" selection-end-line="133" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/relationship/DAO/UserDAO.java">
+        <entry file="file://$PROJECT_DIR$/src/com/relationship/domain/SocialCircle.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="98">
-              <caret line="32" column="118" selection-start-line="32" selection-start-column="118" selection-end-line="32" selection-end-column="118" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/relationship/view/MainView.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="62">
-              <caret line="89" column="62" selection-start-line="89" selection-start-column="62" selection-end-line="89" selection-end-column="62" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/relationship/util/LoadPropertiesFile.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="571">
-              <caret line="36" column="25" selection-start-line="36" selection-end-line="37" />
+            <state relative-caret-position="243">
+              <caret line="27" column="21" selection-start-line="27" selection-start-column="19" selection-end-line="27" selection-end-column="21" />
+              <folding>
+                <element signature="e#444#445#0" expanded="true" />
+                <element signature="e#467#468#0" expanded="true" />
+                <element signature="e#437#438#0" expanded="true" />
+                <element signature="e#462#463#0" expanded="true" />
+                <element signature="e#496#497#0" expanded="true" />
+                <element signature="e#524#525#0" expanded="true" />
+                <element signature="e#555#556#0" expanded="true" />
+                <element signature="e#582#583#0" expanded="true" />
+                <element signature="e#622#623#0" expanded="true" />
+                <element signature="e#654#655#0" expanded="true" />
+                <element signature="e#745#746#0" expanded="true" />
+                <element signature="e#774#775#0" expanded="true" />
+                <element signature="e#818#819#0" expanded="true" />
+                <element signature="e#854#855#0" expanded="true" />
+                <element signature="e#690#691#0" expanded="true" />
+                <element signature="e#722#723#0" expanded="true" />
+                <element signature="e#772#773#0" expanded="true" />
+                <element signature="e#814#815#0" expanded="true" />
+                <element signature="e#852#853#0" expanded="true" />
+                <element signature="e#886#887#0" expanded="true" />
+                <element signature="e#940#941#0" expanded="true" />
+                <element signature="e#986#987#0" expanded="true" />
+                <element signature="e#1015#1016#0" expanded="true" />
+                <element signature="e#1040#1041#0" expanded="true" />
+                <element signature="e#1076#1077#0" expanded="true" />
+                <element signature="e#1104#1105#0" expanded="true" />
+                <element signature="e#1133#1134#0" expanded="true" />
+                <element signature="e#1158#1159#0" expanded="true" />
+                <element signature="e#1194#1195#0" expanded="true" />
+                <element signature="e#1222#1223#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -101,11 +96,15 @@
       <find>[user]</find>
       <find>\s\[</find>
       <find>[menu]</find>
+      <find>货物</find>
+      <find>Commodity</find>
     </findStrings>
     <replaceStrings>
       <replace>人际关系管理</replace>
       <replace>user</replace>
       <replace>menu</replace>
+      <replace>社交圈</replace>
+      <replace>SocialCircle</replace>
     </replaceStrings>
   </component>
   <component name="Git.Settings">
@@ -120,6 +119,9 @@
         <option value="$PROJECT_DIR$/src/com/relationship/view/MainView.java" />
         <option value="$PROJECT_DIR$/src/app.config" />
         <option value="$PROJECT_DIR$/src/com/relationship/Main.java" />
+        <option value="$PROJECT_DIR$/src/com/relationship/domain/SocialCircle.java" />
+        <option value="$PROJECT_DIR$/src/com/relationship/view/SocialCirclePane.java" />
+        <option value="$PROJECT_DIR$/src/com/relationship/DAO/SocialCircleDAO.java" />
       </list>
     </option>
   </component>
@@ -137,6 +139,9 @@
     <option name="y" value="-8" />
     <option name="width" value="1386" />
     <option name="height" value="788" />
+  </component>
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
@@ -174,6 +179,20 @@
               <item name="07062310-relationship" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="relationship" type="462c0819:PsiDirectoryNode" />
+              <item name="domain" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="07062310-relationship" type="b2602c69:ProjectViewProjectNode" />
+              <item name="07062310-relationship" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="relationship" type="462c0819:PsiDirectoryNode" />
+              <item name="util" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="07062310-relationship" type="b2602c69:ProjectViewProjectNode" />
+              <item name="07062310-relationship" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="relationship" type="462c0819:PsiDirectoryNode" />
               <item name="view" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
@@ -194,6 +213,13 @@
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="File.Encoding" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.relationship.view" />
+      <recent name="com.relationship.domain" />
+      <recent name="com.relationship.DAO" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -257,24 +283,19 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="4061000" />
+    <option name="totallyTimeSpent" value="7268000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info id="Image Layers" />
-      <window_info id="Designer" />
-      <window_info id="UI Designer" />
-      <window_info id="Capture Tool" />
-      <window_info id="Favorites" side_tool="true" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.14220877" />
+      <window_info content_ui="combo" id="Project" order="0" weight="0.14220877" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Messages" weight="0.3295082" />
-      <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Database Changes" />
-      <window_info anchor="bottom" id="Version Control" />
-      <window_info anchor="bottom" id="Terminal" />
-      <window_info anchor="bottom" id="Event Log" side_tool="true" />
+      <window_info id="Capture Tool" order="2" />
+      <window_info id="Image Layers" order="3" />
+      <window_info id="Designer" order="4" />
+      <window_info id="UI Designer" order="5" />
+      <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3295082" />
       <window_info anchor="bottom" id="Run" order="2" />
@@ -282,46 +303,52 @@
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="right" id="Palette" />
-      <window_info anchor="right" id="Theme Preview" />
-      <window_info anchor="right" id="Maven" />
-      <window_info anchor="right" id="Capture Analysis" />
-      <window_info anchor="right" id="Palette&#9;" />
-      <window_info anchor="right" id="Database" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Database Changes" order="8" />
+      <window_info anchor="bottom" id="Terminal" order="9" />
+      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
+      <window_info anchor="bottom" id="Version Control" order="11" />
+      <window_info anchor="bottom" id="Messages" order="12" weight="0.3295082" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Palette" order="3" />
+      <window_info anchor="right" id="Database" order="4" />
+      <window_info anchor="right" id="Theme Preview" order="5" />
+      <window_info anchor="right" id="Maven" order="6" />
+      <window_info anchor="right" id="Capture Analysis" order="7" />
+      <window_info anchor="right" id="Palette&#9;" order="8" />
     </layout>
     <layout-to-restore>
-      <window_info id="Image Layers" order="0" />
-      <window_info id="Designer" order="1" />
-      <window_info id="UI Designer" order="2" />
-      <window_info id="Capture Tool" order="3" />
-      <window_info id="Favorites" order="4" side_tool="true" />
-      <window_info active="true" content_ui="combo" id="Project" order="5" visible="true" weight="0.14220877" />
-      <window_info id="Structure" order="6" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Docker" order="0" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="1" />
-      <window_info anchor="bottom" id="Terminal" order="2" />
-      <window_info anchor="bottom" id="Database Changes" order="3" />
-      <window_info anchor="bottom" id="Event Log" order="4" side_tool="true" />
-      <window_info anchor="bottom" id="Messages" order="5" weight="0.3295082" />
-      <window_info anchor="bottom" id="Message" order="6" />
-      <window_info anchor="bottom" id="Find" order="7" weight="0.3295082" />
-      <window_info anchor="bottom" id="Run" order="8" />
-      <window_info anchor="bottom" id="Debug" order="9" weight="0.47213113" />
-      <window_info anchor="bottom" id="Cvs" order="10" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="11" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="12" />
-      <window_info anchor="right" id="Palette" order="0" />
-      <window_info anchor="right" id="Database" order="1" />
-      <window_info anchor="right" id="Theme Preview" order="2" />
-      <window_info anchor="right" id="Capture Analysis" order="3" />
-      <window_info anchor="right" id="Palette&#9;" order="4" />
-      <window_info anchor="right" id="Maven" order="5" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="6" type="SLIDING" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="7" weight="0.25" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="8" weight="0.25" />
+      <window_info content_ui="combo" id="Project" order="0" weight="0.14220877" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Capture Tool" order="2" />
+      <window_info id="Image Layers" order="3" />
+      <window_info id="Designer" order="4" />
+      <window_info id="UI Designer" order="5" />
+      <window_info id="Favorites" order="6" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.3295082" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info active="true" anchor="bottom" id="Debug" order="3" visible="true" weight="0.47213113" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Database Changes" order="8" />
+      <window_info anchor="bottom" id="Terminal" order="9" />
+      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
+      <window_info anchor="bottom" id="Version Control" order="11" />
+      <window_info anchor="bottom" id="Messages" order="12" weight="0.3295082" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Palette" order="3" />
+      <window_info anchor="right" id="Database" order="4" />
+      <window_info anchor="right" id="Theme Preview" order="5" />
+      <window_info anchor="right" id="Maven" order="6" />
+      <window_info anchor="right" id="Capture Analysis" order="7" />
+      <window_info anchor="right" id="Palette&#9;" order="8" />
     </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -385,8 +412,61 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/relationship/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2457">
-          <caret line="103" column="77" selection-start-line="103" selection-start-column="77" selection-end-line="103" selection-end-column="77" />
+        <state relative-caret-position="243">
+          <caret line="21" column="24" selection-start-line="21" selection-start-column="24" selection-end-line="21" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/relationship/domain/SocialCircle.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="243">
+          <caret line="27" column="21" selection-start-line="27" selection-start-column="19" selection-end-line="27" selection-end-column="21" />
+          <folding>
+            <element signature="e#444#445#0" expanded="true" />
+            <element signature="e#467#468#0" expanded="true" />
+            <element signature="e#437#438#0" expanded="true" />
+            <element signature="e#462#463#0" expanded="true" />
+            <element signature="e#496#497#0" expanded="true" />
+            <element signature="e#524#525#0" expanded="true" />
+            <element signature="e#555#556#0" expanded="true" />
+            <element signature="e#582#583#0" expanded="true" />
+            <element signature="e#622#623#0" expanded="true" />
+            <element signature="e#654#655#0" expanded="true" />
+            <element signature="e#745#746#0" expanded="true" />
+            <element signature="e#774#775#0" expanded="true" />
+            <element signature="e#818#819#0" expanded="true" />
+            <element signature="e#854#855#0" expanded="true" />
+            <element signature="e#690#691#0" expanded="true" />
+            <element signature="e#722#723#0" expanded="true" />
+            <element signature="e#772#773#0" expanded="true" />
+            <element signature="e#814#815#0" expanded="true" />
+            <element signature="e#852#853#0" expanded="true" />
+            <element signature="e#886#887#0" expanded="true" />
+            <element signature="e#940#941#0" expanded="true" />
+            <element signature="e#986#987#0" expanded="true" />
+            <element signature="e#1015#1016#0" expanded="true" />
+            <element signature="e#1040#1041#0" expanded="true" />
+            <element signature="e#1076#1077#0" expanded="true" />
+            <element signature="e#1104#1105#0" expanded="true" />
+            <element signature="e#1133#1134#0" expanded="true" />
+            <element signature="e#1158#1159#0" expanded="true" />
+            <element signature="e#1194#1195#0" expanded="true" />
+            <element signature="e#1222#1223#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/relationship/view/SocialCirclePane.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="246">
+          <caret line="133" lean-forward="true" selection-start-line="133" selection-end-line="133" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/relationship/DAO/SocialCircleDAO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="233">
+          <caret line="108" column="62" lean-forward="true" selection-start-line="108" selection-start-column="62" selection-end-line="108" selection-end-column="62" />
         </state>
       </provider>
     </entry>
