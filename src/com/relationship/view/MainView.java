@@ -151,7 +151,8 @@ public class MainView extends BaseView {
         String paneName = menu.split("-")[1];
 
         //拼接包名
-        paneName = "com.relationship.view." + paneName;
+        paneName = getClass().getPackage().getName() + "." + paneName;
+//        paneName = "com.relationship.view." + paneName;
 
         System.out.printf("选择菜单:%d %s\r\n", index, menu);
         mainHBox.getChildren().clear();
