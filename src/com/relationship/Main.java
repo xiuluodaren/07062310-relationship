@@ -3,6 +3,7 @@ package com.relationship;
 import com.relationship.DAO.UserDAO;
 import com.relationship.domain.User;
 import com.relationship.util.Constant;
+import com.relationship.util.LoadPropertiesFile;
 import com.relationship.util.StringUtil;
 import com.relationship.util.XLUtil;
 import com.relationship.view.MainView;
@@ -73,19 +74,7 @@ import javafx.stage.Stage;
                 return;
             }
 
-            User user = UserDAO.login(userName, pwd);
-
-            if (user == null)
-            {
-                XLUtil.showAlert("提示","登陆失败");
-            }else{
-                //登陆成功,跳转页面
-                MainView mainView = new MainView(Constant.SCENE_WIDTH * 4,Constant.SCENE_HEIGHT * 3);
-                mainView.show();
-
-                //隐藏登陆页面
-                primaryStage.hide();
-            }
+            login(primaryStage, userName, pwd);
 
         });
 
@@ -109,7 +98,29 @@ import javafx.stage.Stage;
         //显示
         primaryStage.show();
 
+        //是否debug
+        if ("true".equals(LoadPropertiesFile.getProperty("DEBUG")))
+        {
+            login(primaryStage, "admin", "admin");
+        }
+
     }
+
+    private void login(Stage primaryStage, String userName, String pwd) {
+         User user = UserDAO.login(userName, pwd);
+
+         if (user == null)
+         {
+             XLUtil.showAlert("提示","登陆失败");
+         }else{
+             //登陆成功,跳转页面
+             MainView mainView = new MainView(Constant.SCENE_WIDTH * 4,Constant.SCENE_HEIGHT * 3);
+             mainView.show();
+
+             //隐藏登陆页面
+             primaryStage.hide();
+         }
+     }
 
     public static void main(String[] args) {
         launch(args);
