@@ -101,6 +101,7 @@ import javafx.stage.Stage;
         //是否debug
         if ("true".equals(LoadPropertiesFile.getProperty("DEBUG")))
         {
+            System.out.println("debug");
             login(primaryStage, "admin", "admin");
         }
 
