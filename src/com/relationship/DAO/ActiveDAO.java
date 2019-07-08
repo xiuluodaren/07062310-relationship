@@ -25,7 +25,8 @@ public class ActiveDAO {
      */
     public static List<Active> findActiveList(Long Id)
     {
-        String sql = "select `id`, `title`, `detail`, `startTime`, `endTime`, `initiator`, `address`, `summary`, `createTime` from active ";
+        String sql = "select `id`, `title`, `detail`, `startTime`, `endTime`, `initiator`, `address`, `summary`, " +
+                "`createTime` ,`participant` from active ";
 
         if (Id != null)
         {
@@ -52,6 +53,7 @@ public class ActiveDAO {
                 active.setAddress(resultSet.getString(7));
                 active.setSummary(resultSet.getString(8));
                 active.setCreateTime(LocalDateTime.parse(resultSet.getString(9).substring(0,19),df));
+                active.setParticipant(resultSet.getString(10));
 
                 activeList.add(active);
             }
@@ -87,11 +89,12 @@ public class ActiveDAO {
         XLUtil.fillObjectWithNull(oldFind,active);
 
         String sql = "UPDATE `active` SET `title` = ?, `detail` = ?, `startTime` = ?, `endTime` = ?, `initiator` = ?, " +
-                "`address` = ?, `summary` = ?, `createTime` = ? WHERE `id` = ?;";
+                "`address` = ?, `summary` = ?, `createTime` = ? , `participant` = ? WHERE `id` = ?;";
 
         boolean execute = JDBCConnection.execute(sql, active.getTitle(), active.getDetail(), DateUtil.getDateTimeAsString(active.getStartTime(),"yyyy-MM-dd HH:mm:ss")
                 , DateUtil.getDateTimeAsString(active.getEndTime(),"yyyy-MM-dd HH:mm:ss"), active.getInitiator(), active.getAddress()
-                , active.getSummary(), DateUtil.getDateTimeAsString(active.getCreateTime(),"yyyy-MM-dd HH:mm:ss"),String.valueOf(active.getId()));
+                , active.getSummary(), DateUtil.getDateTimeAsString(active.getCreateTime(),"yyyy-MM-dd HH:mm:ss")
+                , active.getParticipant(), String.valueOf(active.getId()));
         return execute;
 
     }
@@ -117,13 +120,13 @@ public class ActiveDAO {
     public static boolean createActive(Active active)
     {
         //构造更新sql
-        String sql = "INSERT INTO `active`(`title`, `detail`, `startTime`, `endTime`, `initiator`, `address`, `summary`, `createTime`) " +
-                "VALUES (?,?,?,?,?,?,?,?);";
+        String sql = "INSERT INTO `active`(`title`, `detail`, `startTime`, `endTime`, `initiator`, `address`, `summary`, `createTime`, `participant`) " +
+                "VALUES (?,?,?,?,?,?,?,?,?);";
 
         //执行插入
         boolean execute = JDBCConnection.execute(sql, active.getTitle(), active.getDetail(), DateUtil.getDateTimeAsString(active.getStartTime(),"yyyy-MM-dd HH:mm:ss")
                 , DateUtil.getDateTimeAsString(active.getEndTime(),"yyyy-MM-dd HH:mm:ss"), active.getInitiator(), active.getAddress()
-                , active.getSummary(), DateUtil.getDateTimeAsString(active.getCreateTime(),"yyyy-MM-dd HH:mm:ss"));
+                , active.getSummary(), DateUtil.getDateTimeAsString(active.getCreateTime(),"yyyy-MM-dd HH:mm:ss"),active.getParticipant());
 
         return execute;
     }

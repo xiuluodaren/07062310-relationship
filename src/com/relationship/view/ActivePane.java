@@ -147,12 +147,15 @@ public class ActivePane extends Pane {
         TableColumn createTime = new TableColumn("创建时间");
         createTime.setCellValueFactory(new PropertyValueFactory<>("createTimeStr"));
 
+        TableColumn participant = new TableColumn("参与者");
+        participant.setCellValueFactory(new PropertyValueFactory<>("participant"));
+
         data = FXCollections.observableArrayList();
 
         //查询活动
         data.addAll(ActiveDAO.findActiveList(null));
 
-        tableView.getColumns().addAll(number, title, detail, startTime, endTime, initiator, address, summary, createTime);
+        tableView.getColumns().addAll(number, title, detail, startTime, endTime, initiator, address, summary, createTime, participant);
         tableView.setItems(data);
 
     }
@@ -282,18 +285,20 @@ public class ActivePane extends Pane {
         summaryTF.prefWidthProperty().bind(stuStage.widthProperty().subtract(summaryTF.getLayoutX())
             .subtract(Constant.H_MARGER * 3));
 
-//        //创建时间
-//        Label createTimeLabel = new Label("创建时间:");
-//        createTimeLabel.setLayoutX(Constant.MARGER_LEFT);
-//        createTimeLabel.setLayoutY(Constant.V_MARGER * 9 + Constant.C_HEIGHT * 16);
-//        createTimeLabel.setPrefWidth(Constant.LABEL_WIDTH);
-//        createTimeLabel.setPrefHeight(Constant.C_HEIGHT);
-//
-//        //创建时间
-//        DateTimePicker createTimeTF = new DateTimePicker();
-//        createTimeTF.setLayoutX(Constant.LABEL_WIDTH + Constant.MARGER_LEFT + Constant.H_MARGER);
-//        createTimeTF.setLayoutY(Constant.V_MARGER * 9 + Constant.C_HEIGHT * 16);
-//        createTimeTF.setPrefHeight(Constant.C_HEIGHT);
+        //参与者
+        Label participantLabel = new Label("参与者:");
+        participantLabel.setLayoutX(Constant.MARGER_LEFT);
+        participantLabel.setLayoutY(Constant.V_MARGER * 9 + Constant.C_HEIGHT * 16);
+        participantLabel.setPrefHeight(Constant.C_HEIGHT);
+
+        //参与者
+        TextField participantTF = new TextField();
+        participantTF.setLayoutX(Constant.LABEL_WIDTH + Constant.MARGER_LEFT + Constant.H_MARGER);
+        participantTF.setLayoutY(Constant.V_MARGER * 9 + Constant.C_HEIGHT * 16);
+        participantTF.setPrefHeight(Constant.C_HEIGHT );
+        participantTF.prefWidthProperty().bind(stuStage.widthProperty().subtract(participantTF.getLayoutX())
+                .subtract(Constant.H_MARGER * 3));
+
 
         //保存按钮
         Button saveBtn = new Button("保存");
@@ -313,6 +318,7 @@ public class ActivePane extends Pane {
             String initiator = initiatorTF.getText();
             String address = addressTF.getText();
             String summary = summaryTF.getText();
+            String participant = participantTF.getText();
 
             boolean execute = false;
 
@@ -326,6 +332,7 @@ public class ActivePane extends Pane {
             active.setAddress(address);
             active.setSummary(summary);
             active.setCreateTime(LocalDateTime.now());
+            active.setParticipant(participant);
 
             if (id == null)
             {
@@ -350,7 +357,7 @@ public class ActivePane extends Pane {
 
         group.getChildren().addAll(nameLabel, nameTF, titleLabel, titleTF,
                 detailLabel, detailTF, startTimeLabel, startTimeTF, endTimeLabel, endTimeTF, initiatorLabel, initiatorTF,
-                addressLabel, addressTF, summaryLabel, summaryTF, saveBtn);
+                addressLabel, addressTF, summaryLabel, summaryTF, participantLabel, participantTF, saveBtn);
 
         stuStage.setScene(new Scene(group, Constant.SCENE_WIDTH, Constant.SCENE_HEIGHT * 3));
         stuStage.show();

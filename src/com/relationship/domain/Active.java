@@ -55,6 +55,11 @@ public class Active {
      */
     private LocalDateTime createTime;
 
+    /**
+     *参与者列表,逗号分隔
+     */
+    private String participant;
+
     public String getStartTimeStr()
     {
         return DateUtil.getDateTimeAsString(this.startTime,"yyyy-MM-dd HH:mm:ss");
@@ -68,6 +73,14 @@ public class Active {
     public String getCreateTimeStr()
     {
         return DateUtil.getDateTimeAsString(this.createTime,"yyyy-MM-dd HH:mm:ss");
+    }
+
+    public String getParticipant() {
+        return participant;
+    }
+
+    public void setParticipant(String participant) {
+        this.participant = participant;
     }
 
     public Long getId() {
