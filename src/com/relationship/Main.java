@@ -47,18 +47,6 @@ import javafx.stage.Stage;
         pwdTF.setLayoutY(Constant.V_MARGER * 2 + Constant.C_HEIGHT);
         pwdTF.setPrefHeight(Constant.C_HEIGHT);
 
-//        //注册
-//        Button registerBtn = new Button("注册");
-//        registerBtn.setLayoutX(Constant.MARGER_LEFT);
-//        registerBtn.setLayoutY(Constant.V_MARGER * 3 + Constant.C_HEIGHT * 2);
-//        registerBtn.setPrefWidth(Constant.LABEL_WIDTH);
-//        registerBtn.setOnAction(event -> {
-//            //注册
-//            RegisterView registerView = new RegisterView(Constant.SCENE_WIDTH, Constant.SCENE_HEIGHT);
-//            registerView.show();
-//
-//        });
-
         //登陆
         Button loginBtn = new Button("登陆");
         loginBtn.setLayoutX(Constant.MARGER_LEFT * 2 + Constant.LABEL_WIDTH);
