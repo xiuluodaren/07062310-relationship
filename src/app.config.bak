@@ -3,6 +3,7 @@ jdbcUrl = jdbc:mysql://localhost:3306/relationship?serverTimezone=UTC&useSSL=fal
 jdbcUserName = root
 jdbcPassword = root
 
+initPwd = 123456
 #作者信息
 message = 作者
 
