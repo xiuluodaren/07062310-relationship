@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ae7de64b-911c-47c6-9bb4-e8e34fd62fcd" name="Default Changelist" comment="commit">
+    <list default="true" id="ae7de64b-911c-47c6-9bb4-e8e34fd62fcd" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -188,7 +188,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1562634871707" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1562635545529" />
     <property name="extract.method.default.visibility" value="private" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../XiuluoTest" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
@@ -260,7 +260,7 @@
       <workItem from="1562553642952" duration="3423000" />
       <workItem from="1562558638506" duration="15912000" />
       <workItem from="1562578590143" duration="223000" />
-      <workItem from="1562633494890" duration="1479000" />
+      <workItem from="1562633494890" duration="1874000" />
     </task>
     <task id="LOCAL-00001" summary="初始化工程-不可运行">
       <created>1562466649930</created>
@@ -360,15 +360,21 @@
       <option name="project" value="LOCAL" />
       <updated>1562633642217</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="报告">
+      <created>1562635020879</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1562635020879</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="48758000" />
+    <option name="totallyTimeSpent" value="49153000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1368" height="736" extended-state="6" />
-    <editor active="true" />
+    <frame x="-8" y="-8" width="1368" height="736" extended-state="7" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" weight="0.17584097" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -417,7 +423,8 @@
     <MESSAGE value="合作管理" />
     <MESSAGE value="礼物管理" />
     <MESSAGE value="commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="commit" />
+    <MESSAGE value="报告" />
+    <option name="LAST_COMMIT_MESSAGE" value="报告" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
