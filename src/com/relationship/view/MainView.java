@@ -93,6 +93,7 @@ public class MainView extends BaseView {
         nameLabel.setLayoutX(600);
         nameLabel.setLayoutY(150);
         nameLabel.setPrefHeight(50);
+        nameLabel.setPrefWidth(200);
 
         //添加到头部水平框
         headGroup.getChildren().addAll(backgroundImage, headLabel, nameLabel);
@@ -127,6 +128,7 @@ public class MainView extends BaseView {
         //显示区域水平控件
         mainHBox.setLayoutX(100);
         mainHBox.setLayoutY(200);
+        mainHBox.layoutXProperty().bind(leftVBox.widthProperty().add(leftVBox.layoutXProperty()));
         mainHBox.prefWidthProperty().bind(scene.widthProperty().subtract(100));
         mainHBox.prefHeightProperty().bind(scene.heightProperty().subtract(200));
 

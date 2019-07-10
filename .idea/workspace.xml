@@ -3,6 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="ae7de64b-911c-47c6-9bb4-e8e34fd62fcd" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/07062310-relationship/app.config" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/07062310-relationship/app.config" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app.config" beforeDir="false" afterPath="$PROJECT_DIR$/src/app.config" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/relationship/view/MainView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/relationship/view/MainView.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -16,33 +19,20 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/com/relationship/DAO/FriendDAO.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="156">
-              <caret line="77" column="43" lean-forward="true" selection-start-line="77" selection-start-column="43" selection-end-line="77" selection-end-column="43" />
-              <folding>
-                <element signature="docComment;class#FriendDAO#0" />
-                <element signature="docComment;method#updateFriend#0;class#FriendDAO#0" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/app.config">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="182">
-              <caret line="7" column="12" selection-start-line="7" selection-start-column="12" selection-end-line="7" selection-end-column="12" />
+            <state relative-caret-position="234">
+              <caret line="9" column="12" selection-start-line="9" selection-start-column="12" selection-end-line="9" selection-end-column="12" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/relationship/view/SocialCirclePane.java">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/com/relationship/view/MainView.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="6370">
-              <caret line="262" column="12" selection-start-line="262" selection-start-column="12" selection-end-line="262" selection-end-column="12" />
+            <state relative-caret-position="140">
+              <caret line="107" column="81" lean-forward="true" selection-start-line="107" selection-start-column="81" selection-end-line="107" selection-end-column="81" />
             </state>
           </provider>
         </entry>
@@ -82,6 +72,7 @@
       <find>Active</find>
       <find>cooperationerId</find>
       <find>cooperation</find>
+      <find>initPwd</find>
     </findStrings>
     <replaceStrings>
       <replace>人际关系管理</replace>
@@ -113,14 +104,12 @@
         <option value="$PROJECT_DIR$/src/com/wms/Main.java" />
         <option value="$PROJECT_DIR$/src/com/wms/DAO/UserDAO.java" />
         <option value="$PROJECT_DIR$/src/com/wms/view/MainView.java" />
-        <option value="$PROJECT_DIR$/src/com/relationship/view/MainView.java" />
         <option value="$PROJECT_DIR$/src/com/relationship/domain/Friend.java" />
         <option value="$PROJECT_DIR$/src/com/relationship/DAO/FriendDAO.java" />
         <option value="$PROJECT_DIR$/src/com/relationship/DAO/SocialCircleDAO.java" />
         <option value="$PROJECT_DIR$/src/com/relationship/view/SocialCirclePane.java" />
         <option value="$PROJECT_DIR$/src/com/relationship/domain/SocialCircle.java" />
         <option value="$PROJECT_DIR$/src/com/relationship/view/FriendPane.java" />
-        <option value="$PROJECT_DIR$/src/app.config" />
         <option value="$PROJECT_DIR$/src/com/relationship/Main.java" />
         <option value="$PROJECT_DIR$/src/com/relationship/domain/Active.java" />
         <option value="$PROJECT_DIR$/src/com/relationship/view/ActivePane.java" />
@@ -131,6 +120,8 @@
         <option value="$PROJECT_DIR$/src/com/relationship/DAO/GiftDAO.java" />
         <option value="$PROJECT_DIR$/src/com/relationship/domain/Gift.java" />
         <option value="$PROJECT_DIR$/src/com/relationship/view/GiftPane.java" />
+        <option value="$PROJECT_DIR$/src/app.config" />
+        <option value="$PROJECT_DIR$/src/com/relationship/view/MainView.java" />
       </list>
     </option>
   </component>
@@ -144,10 +135,10 @@
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-11" />
-    <option name="y" value="-11" />
-    <option name="width" value="1389" />
-    <option name="height" value="791" />
+    <option name="x" value="-13" />
+    <option name="y" value="-13" />
+    <option name="width" value="1391" />
+    <option name="height" value="793" />
   </component>
   <component name="ProjectLevelVcsManager">
     <OptionsSetting value="false" id="Update" />
@@ -158,6 +149,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -176,19 +169,31 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="relationship" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="07062310-relationship" type="b2602c69:ProjectViewProjectNode" />
+              <item name="07062310-relationship" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="relationship" type="462c0819:PsiDirectoryNode" />
+              <item name="DAO" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="07062310-relationship" type="b2602c69:ProjectViewProjectNode" />
+              <item name="07062310-relationship" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="relationship" type="462c0819:PsiDirectoryNode" />
+              <item name="view" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1562635545529" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1562636534143" />
     <property name="extract.method.default.visibility" value="private" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../XiuluoTest" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
@@ -206,6 +211,7 @@
       <recent name="com.relationship.domain" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\JavaDeveloper\workspace\07062310-relationship" />
       <recent name="E:\JavaDeveloper\workspace\07062310-relationship\lib" />
     </key>
   </component>
@@ -260,7 +266,10 @@
       <workItem from="1562553642952" duration="3423000" />
       <workItem from="1562558638506" duration="15912000" />
       <workItem from="1562578590143" duration="223000" />
-      <workItem from="1562633494890" duration="1874000" />
+      <workItem from="1562633494890" duration="3013000" />
+      <workItem from="1562649695994" duration="1439000" />
+      <workItem from="1562733073158" duration="608000" />
+      <workItem from="1562746125095" duration="223000" />
     </task>
     <task id="LOCAL-00001" summary="初始化工程-不可运行">
       <created>1562466649930</created>
@@ -367,16 +376,24 @@
       <option name="project" value="LOCAL" />
       <updated>1562635020879</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="报告">
+      <created>1562635564781</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1562635564781</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="49153000" />
+    <option name="totallyTimeSpent" value="52562000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1368" height="736" extended-state="7" />
+    <frame x="-8" y="-8" width="1368" height="736" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" weight="0.17584097" />
+      <window_info content_ui="combo" id="Project" order="0" weight="0.16743119" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -384,7 +401,7 @@
       <window_info id="UI Designer" order="5" />
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Debug" order="1" weight="0.40464345" />
+      <window_info active="true" anchor="bottom" id="Debug" order="1" visible="true" weight="0.40464345" />
       <window_info anchor="bottom" id="Find" order="2" weight="0.3295082" />
       <window_info anchor="bottom" id="Run" order="3" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
@@ -448,13 +465,6 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/com/relationship/view/MainView.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="62">
-          <caret line="89" column="62" selection-start-line="89" selection-start-column="62" selection-end-line="89" selection-end-column="62" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/relationship/DAO/UserDAO.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="98">
@@ -732,10 +742,17 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/relationship/view/SocialCirclePane.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="6370">
+          <caret line="262" column="12" selection-start-line="262" selection-start-column="12" selection-end-line="262" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/relationship/DAO/FriendDAO.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="156">
-          <caret line="77" column="43" lean-forward="true" selection-start-line="77" selection-start-column="43" selection-end-line="77" selection-end-column="43" />
+        <state relative-caret-position="500">
+          <caret line="78" selection-start-line="78" selection-end-line="78" />
           <folding>
             <element signature="docComment;class#FriendDAO#0" />
             <element signature="docComment;method#updateFriend#0;class#FriendDAO#0" />
@@ -745,15 +762,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/app.config">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="182">
-          <caret line="7" column="12" selection-start-line="7" selection-start-column="12" selection-end-line="7" selection-end-column="12" />
+        <state relative-caret-position="234">
+          <caret line="9" column="12" selection-start-line="9" selection-start-column="12" selection-end-line="9" selection-end-column="12" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/relationship/view/SocialCirclePane.java">
+    <entry file="file://$PROJECT_DIR$/src/com/relationship/view/MainView.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="6370">
-          <caret line="262" column="12" selection-start-line="262" selection-start-column="12" selection-end-line="262" selection-end-column="12" />
+        <state relative-caret-position="140">
+          <caret line="107" column="81" lean-forward="true" selection-start-line="107" selection-start-column="81" selection-end-line="107" selection-end-column="81" />
         </state>
       </provider>
     </entry>
